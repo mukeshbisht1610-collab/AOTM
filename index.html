@@ -1,6 +1,13 @@
 <!doctypehtml>
 <html>
 <head><title>Arena Animation GTB Nagar</title>
+
+<meta name="description" content="Arena Animation GTB Nagar - Animation, VFX, Gaming and Graphic Design courses in Delhi">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
 <style>
 
 *
@@ -26,6 +33,7 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 background:rgba(17,17,17,0.7);
+animation:slideDown 0.8s ease-out;
 }
 
 .logo img
@@ -157,6 +165,76 @@ margin-bottom:15px;
 font-size:24px;
 }
 
+.gallery
+{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery img
+{
+width:100%;
+height:250px;
+//object-fit:cover;
+border-radius:15px;
+transition:0.5s;
+}
+
+.gallery img:hover
+{
+transform:scale(1.5);
+}
+
+.placement-container
+{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.place-card
+{
+background:#161616;
+padding:40px;
+text-align:center;
+border-radius:15px;
+transition:0.5s;
+}
+
+.place-card:hover
+{
+transform:translateY(-10px);
+box-shadow:0 0 20px #ff2e63;
+}
+
+.place-card h1
+{
+color:#ff2e63;
+font-size:50px;
+}
+
+
+.contact
+{
+text-align:center;
+}
+
+.contact p
+{
+font-size:18px;
+color:#ccc;
+margin:10px 0;
+}
+
+footer
+{
+background:#111;
+text-align:center;
+padding:20px;
+color:#888;
+
+}
 
 </style>
 </head>
@@ -179,12 +257,13 @@ font-size:24px;
 
 <section class="hero">
 <div class="hero-content">
+<h1 class="animate__animated animate__fadeInUp animate__delay-1s animate__slow"> ARENA ANIMATION GTB</h1>
 
-<h1>ARENA ANIMATION GTB</h1>
 <p>
-Leading Institute for Animation, VFX, Gaming & design</p>
+Leading Institute for Animation, VFX, Gaming & design
+</p>
 
-<a href=#courses">Explore courses</a>
+<a href="#courses">Explore courses</a>
 </div>
 
 </section>
@@ -205,7 +284,7 @@ We help student build creative careers through industry-focused training and rea
 </div>
 </section>
 
-<secton id="course">
+<secton id="courses">
 <h1 class="section-title">
 Our Courses
 </h1>
@@ -242,6 +321,59 @@ Design exciting games and environments.
 </div>
 </div>
 </section>
+
+<section id="gallery">
+<h1 class="section-title"> Student Showcase</h1>
+<div class="gallery">
+
+<img src="images/a1.jfif">
+<img src="images/a2.jfif">
+<img src="images/a3.jfif">
+<img src="images/a4.jfif">
+<img src="images/a5.jfif">
+<img src="images/a6.jfif">
+</div>
+</section>
+
+<section id="placement">
+<h1 class="section-title">Placement</h1>
+
+<div class="placement-container">
+
+<div class="place-card">
+<h1>500+</h1>
+<p> Student Trained</p>
+</div>
+
+<div class="place-card">
+<h1>100+</h1>
+<p>Placement</p>
+</div>
+
+<div class="place-card">
+<h1>50+</h1>
+<p>Projects</p>
+</div>
+
+<div class="place-card">
+<h1>10+</h1>
+<p>Years Experience</p>
+</div>
+
+</section>
+
+<section id="contact">
+<h1 class="section-title">Contact Us</h1>
+<div class="contact">
+<p>📍GTB Nagar, Delhi</p>
+<p>📞+91******85</p>
+<p>📧 arenaanimation@gmail.com</p>
+</div>
+</section>
+
+<footer>
+<p> @2026 Arena Animation GTB Nagar| All Roghts Reserved</p>
+</footer>
 
 
 </body>
